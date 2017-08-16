@@ -42,9 +42,10 @@
   background: black
 
 .nav
-  padding: 2.5% 40px
+  padding: 10px 40px
   margin: 0
   text-align: right
+  font-family: "SF-Hollywood-Hills", serif
   li
     font-size: 35px
     display: inline-block
@@ -53,40 +54,25 @@
     a
       color: #f5f5f5
       display: block
+      margin-left: 20px
       text-decoration: none
+      &.nuxt-link-active, &:hover
+        border-bottom: 4px solid darkred
+      background: black
+      border-bottom: 4px solid black
       &:first-letter
         :font-size 50px
         color: darkred
 .menu
   position: absolute
   left: 0
-  top: 50px
+  top: 66px
   display: none
   flex-direction: column
   z-index: 7
 li:hover .menu
   display: flex
 
-li
-  position: relative
-
-  a
-    font-size: 35px
-    font-family: "SF-Hollywood-Hills", serif
-    color: #f5f5f5
-    text-decoration: none
-    padding: 5px 10px
-    border-bottom: 4px solid black
-    background: black
-
-    &.nuxt-link-active, &:hover
-      border-bottom: 4px solid darkred
-
-ul.el-dropdown-menu
-  background: black
-
-.el-dropdown-menu__item:hover:not(.is-disabled)
-  background: black
 
 html, body, #__nuxt, #app
   padding: 0
@@ -94,11 +80,55 @@ html, body, #__nuxt, #app
   height: 100%
   font-family: 'Saira', serif
 
+#app
+  display: flex
+  flex-direction: column
+
 .page
-  height: 100%
+  flex-grow: 1
   font-family: 'Saira', serif
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
+  background-attachment: fixed
   padding-top: 3em
+  overflow: scroll
+  &.center
+    text-align: center
+
+  h1
+    margin-bottom: 0.5em
+    color: darkred
+    text-shadow: 5px 5px 5px #333
+
+  img, iframe
+    border: 17px solid black
+    outline: 2px solid white
+    margin: 10px
+
+  .card__text
+    background: rgba(255, 255, 255, 0.7)
+
+  a
+    color: darkred
+    font-weight: bold
+    text-decoration: none
+
+  h2
+    font-size: 35px
+    color: darkred
+    text-shadow: 5px 5px 5px #333
+
+  figure
+    position: relative
+    figcaption
+      position: absolute
+      bottom: 35px
+      color: whitesmoke
+      font-family: "SF-Hollywood-Hills", serif
+      font-size: 35px
+      text-shadow: 5px 5px 5px #000
+      text-align: center
+      width: 100%
+
 </style>

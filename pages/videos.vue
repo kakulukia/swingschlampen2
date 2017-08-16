@@ -1,5 +1,7 @@
 <template lang="pug">
-  .page videos
+  .page.center
+    h1 Videos
+    iframe(width="560", height="315", src="https://www.youtube.com/embed/Vijh6i6WwoQ?rel=0", frameborder="0", allowfullscreen)
 </template>
 
 <script>

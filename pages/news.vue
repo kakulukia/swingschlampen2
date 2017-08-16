@@ -1,5 +1,7 @@
 <template lang="pug">
-  .page
+  .page.center
+    v-container
+      h2 Neues von den SwingSchlampen
 </template>
 
 <script>

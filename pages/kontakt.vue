@@ -1,7 +1,7 @@
 <template lang="pug">
   .page
     v-container
-      h1 So kannst Du uns erreichen:
+      h1 So kannst Du uns erreichen
       v-layout(row-sm, column, child-flex-sm)
         v-card-text.ma-1
           h3 Kontakt
@@ -37,8 +37,5 @@ export default {
 .page
   text-align: center
   background-image: url("/img/bg/Koffer.jpg")
-
-.card__text
-  background: rgba(255, 255, 255, 0.7)
 
 </style>

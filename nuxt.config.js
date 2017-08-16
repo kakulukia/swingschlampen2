@@ -41,7 +41,10 @@ module.exports = {
   /*
   ** Load Vuetify into the app
   */
-  plugins: ['~/plugins/vuetify'],
+  plugins: [
+    '~/plugins/vuetify',
+    {src: '~/plugins/v-img', ssr: false}
+  ],
   /*
   ** Load Vuetify CSS globally
   */

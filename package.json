@@ -20,6 +20,8 @@
     "sass-loader": "^6.0.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "v-img": "^0.0.8",
+    "vue-lazyload": "^1.0.6",
     "vue-style-loader": "^3.0.1",
     "vuetify": "^0.14.8"
   },

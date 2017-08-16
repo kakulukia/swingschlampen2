@@ -1,5 +1,7 @@
 <template lang="pug">
-  .page
+  .page.center
+    v-container
+      h2 Hier kannst Du uns als naechstes sehen
 </template>
 
 <script>
