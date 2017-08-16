@@ -1,5 +1,5 @@
 <template lang="pug">
-  #app
+  v-app#app
     .header
       ul.nav
         li
@@ -9,13 +9,10 @@
         li
           nuxt-link(to="/band") Band
         li
-          el-dropdown
-            span.el-dropdown-link Media
-            el-dropdown-menu(slot="dropdown")
-              el-dropdown-item
-                nuxt-link(to="/fotos") Fotos
-              el-dropdown-item
-                nuxt-link(to="/videos") Videos
+          a(href="#") Media
+          .menu
+            nuxt-link(to="/fotos") Fotos
+            nuxt-link(to="/videos") Videos
 
         li
           nuxt-link(to="/dates") Dates
@@ -25,8 +22,6 @@
           nuxt-link(to="/kontakt") Kontakt
     nuxt
 </template>
-
-<style src="element-ui/lib/theme-default/index.css"></style>
 
 <style lang="sass">
 @font-face
@@ -45,29 +40,44 @@
 
 .header
   background: black
+
 .nav
   padding: 2.5% 40px
   margin: 0
   text-align: right
-  li, span.el-dropdown-link
-    color: #f5f5f5
+  li
+    font-size: 35px
     display: inline-block
     margin-bottom: 10px
-    &:first-letter
-      font-size: 50px
-      color: darkred
-
+    position: relative
+    a
+      color: #f5f5f5
+      display: block
+      text-decoration: none
+      &:first-letter
+        :font-size 50px
+        color: darkred
+.menu
+  position: absolute
+  left: 0
+  top: 50px
+  display: none
+  flex-direction: column
+  z-index: 7
+li:hover .menu
+  display: flex
 
 li
   position: relative
 
-  a, .el-dropdown-link
+  a
     font-size: 35px
     font-family: "SF-Hollywood-Hills", serif
     color: #f5f5f5
     text-decoration: none
     padding: 5px 10px
     border-bottom: 4px solid black
+    background: black
 
     &.nuxt-link-active, &:hover
       border-bottom: 4px solid darkred
@@ -78,13 +88,17 @@ ul.el-dropdown-menu
 .el-dropdown-menu__item:hover:not(.is-disabled)
   background: black
 
-html, body, .page, #__nuxt, #app
+html, body, #__nuxt, #app
   padding: 0
   margin: 0
   height: 100%
+  font-family: 'Saira', serif
 
 .page
+  height: 100%
+  font-family: 'Saira', serif
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
+  padding-top: 3em
 </style>

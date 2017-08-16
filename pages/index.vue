@@ -1,15 +1,14 @@
 <template lang="pug">
   .page
-    .logo Swing Schlampen
+    .logo Die
+      br
+      | Swing Schlampen
 </template>
 
 <script>
 export default {
-  layout: 'teub',
   data () {
     return {
-      num1: 1,
-      color: 'rgba(19, 206, 102, 0.8)'
     }
   }
 }

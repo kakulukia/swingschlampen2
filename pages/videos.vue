@@ -1,5 +1,5 @@
 <template lang="pug">
-  .page
+  .page videos
 </template>
 
 <script>

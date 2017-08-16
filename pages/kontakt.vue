@@ -1,32 +1,30 @@
 <template lang="pug">
   .page
-    el-row(:gutter="20")
-      el-col(:span="8")
-        h4 Kontakt
-      el-col(:span="8")
-        h4 Booking
-      el-col(:span="8")
-        h4 Label
-    el-row(:gutter="20")
-      el-col(:span="8")
-        p(style='white-space:pre;').
-          Management
-          Die Swing Schlampen GbR
-          Am Heideberg 50
-          15738 Zeuthen
-          (Autogrammadresse)
-      el-col(:span="8")
-        p(style='white-space:pre;').
-          Die Swing Schlampen GbR
-          E-Mail: swingschlamps@gmail.com
-          Tel. 0176 8757 6699
-      el-col(:span="8")
-        p(style='white-space:pre;').
-          Calygram
-          Calyra GmbH
-          Verlag und Medien
-          Ernst-König-Straße 1-2
-          D -06108 Halle (Saale)
+    v-container
+      h1 So kannst Du uns erreichen:
+      v-layout(row-sm, column, child-flex-sm)
+        v-card-text.ma-1
+          h3 Kontakt
+          p(style='white-space:pre;').
+            Management
+            Die Swing Schlampen GbR
+            Am Heideberg 50
+            15738 Zeuthen
+            (Autogrammadresse)
+        v-card-text.ma-1
+          h3 Booking
+          p(style='white-space:pre;').
+            Die Swing Schlampen GbR
+            E-Mail: swingschlamps@gmail.com
+            Tel. 0176 8757 6699
+        v-card-text.ma-1
+          h3 Label
+          p(style='white-space:pre;').
+            Calygram
+            Calyra GmbH
+            Verlag und Medien
+            Ernst-König-Straße 1-2
+            06108 Halle (Saale)
 
 </template>
 
@@ -37,5 +35,10 @@ export default {
 
 <style lang="sass" scoped>
 .page
+  text-align: center
   background-image: url("/img/bg/Koffer.jpg")
+
+.card__text
+  background: rgba(255, 255, 255, 0.7)
+
 </style>

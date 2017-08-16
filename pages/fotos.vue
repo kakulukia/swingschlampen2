@@ -1,5 +1,6 @@
 <template lang="pug">
-  .page
+  .page Fotos
+    a(href="#") testlink
 </template>
 
 <script>

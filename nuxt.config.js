@@ -10,6 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'SwingSchlampen reloaded' }
     ],
     link: [
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Saira:300,400,500,700|Material+Icons' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -21,6 +22,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vuetify'],
+    extractCSS: true,
     /*
     ** Run ESLINT on save
     */
@@ -34,9 +37,13 @@ module.exports = {
         })
       }
     }
-  }
-}
-module.exports = {
-  // Add element-ui in our app, see plugins/element-ui.js file
-  plugins: ['plugins/element-ui.js']
+  },
+  /*
+  ** Load Vuetify into the app
+  */
+  plugins: ['~/plugins/vuetify'],
+  /*
+  ** Load Vuetify CSS globally
+  */
+  css: ['~/assets/app.styl']
 }
