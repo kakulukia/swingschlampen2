@@ -3,7 +3,8 @@
     v-container
       h1 Das Date
 
-      img(src="/img/dateCover.png")
+      a(v-tooltip:right="{ html: 'PDF-Booklet herunterladen' }", href="/pdf/das Date-Booklet.pdf", target="_blank")
+        img(src="/img/dateCover.png")
 
       v-layout(row-sm, column, child-flex-sm)
         v-card-text.ma-1
@@ -16,10 +17,6 @@
             input(type="image", src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_buynow_LG.gif", border="0", name="submit", alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.")
             img(alt="", border="0", src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif", width="1", height="1")
 
-          br
-          br
-          p Hier kannst Du dir das Booklet der CD herunterladen:&nbsp;
-            a(href="/pdf/das Date-Booklet.pdf", target="_blank") PDF
 
 </template>
 

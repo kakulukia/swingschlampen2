@@ -17,7 +17,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#8b0000' },
   /*
   ** Build configuration
   */
@@ -45,6 +45,9 @@ module.exports = {
     '~/plugins/vuetify',
     {src: '~/plugins/v-img', ssr: false}
   ],
+  env: {
+    baseUrl: 'http://localhost:8000'
+  },
   /*
   ** Load Vuetify CSS globally
   */

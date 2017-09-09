@@ -13,10 +13,12 @@
             (Autogrammadresse)
         v-card-text.ma-1
           h3 Booking
-          p(style='white-space:pre;').
-            Die Swing Schlampen GbR
-            E-Mail: swingschlamps@gmail.com
-            Tel. 0176 8757 6699
+          p(style='white-space:pre;')
+            | Die Swing Schlampen GbR
+            | E-Mail:&nbsp;
+            a(href="mailto: info@swingschlampen.de") info@swingschlampen.de
+            br
+            |  Tel. 0176 8757 6699
         v-card-text.ma-1
           h3 Label
           p(style='white-space:pre;').

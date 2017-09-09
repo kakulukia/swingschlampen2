@@ -1,27 +1,27 @@
 <template lang="pug">
   v-app#app
     .header
-      ul.nav
-        li
-          nuxt-link(to="/", exact) Home
-        li
-          nuxt-link(to="/news") News
-        li
-          nuxt-link(to="/band") Band
-        li
-          a(href="#") Media
-          .menu
-            nuxt-link(to="/fotos") Fotos
-            nuxt-link(to="/videos") Videos
-
-        li
-          nuxt-link(to="/dates") Dates
-        li
-          nuxt-link(to="/shop") Shop
-        li
-          nuxt-link(to="/kontakt") Kontakt
+      navigation
     nuxt
 </template>
+
+
+<script>
+import Navigation from '~/components/Navigation'
+export default {
+  methods: {
+    showMenu: function () {
+      console.log('here we are')
+    },
+    hideMenu: function () {
+      console.log('and now we aint!')
+    }
+  },
+  components: {
+    Navigation
+  }
+}
+</script>
 
 <style lang="sass">
 @font-face
@@ -40,39 +40,6 @@
 
 .header
   background: black
-
-.nav
-  padding: 10px 40px
-  margin: 0
-  text-align: right
-  font-family: "SF-Hollywood-Hills", serif
-  li
-    font-size: 35px
-    display: inline-block
-    margin-bottom: 10px
-    position: relative
-    a
-      color: #f5f5f5
-      display: block
-      margin-left: 20px
-      text-decoration: none
-      &.nuxt-link-active, &:hover
-        border-bottom: 4px solid darkred
-      background: black
-      border-bottom: 4px solid black
-      &:first-letter
-        :font-size 50px
-        color: darkred
-.menu
-  position: absolute
-  left: 0
-  top: 66px
-  display: none
-  flex-direction: column
-  z-index: 7
-li:hover .menu
-  display: flex
-
 
 html, body, #__nuxt, #app
   padding: 0

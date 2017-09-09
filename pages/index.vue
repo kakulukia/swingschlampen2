@@ -22,4 +22,7 @@ export default {
 .logo
   font-family: 'scriptina', serif
   font-size: 70px
+  color: #8b0000
+  text-shadow: 1px 1px 2px #000
+  margin-top: 45vh
 </style>
