@@ -1,6 +1,6 @@
 <template lang="pug">
   .burger
-    span(@click="showMenu()") BURGER
+    i.fa.fa-bars(@click="showMenu()")
     ul.nav(@blur="hideMenu()", :class="{open: menuOpen}", @click="hideMenu()")
       li
         nuxt-link(to="/", exact) Home
@@ -31,11 +31,12 @@ export default {
   methods: {
     showMenu: function () {
       console.log('here we are')
-      this.menuOpen = true
+      this.menuOpen = !this.menuOpen
     },
     hideMenu: function () {
       console.log('and now we aint!')
-      this.menuOpen = false
+      let app = this
+      setTimeout(function () { app.menuOpen = false }, 500)
     }
   },
   components: {
@@ -46,14 +47,16 @@ export default {
 <style lang="sass">
 .burger
   text-align: right
-  span
+  i
+    font-size: 25px
     display: none
+
 
 @media (max-width: 1000px)
   .burger
-    color: darkred
+    color: white
     padding: 10px 20px
-    span
+    i
       cursor: pointer
       display: inline-block
 
