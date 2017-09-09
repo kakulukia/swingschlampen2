@@ -1,8 +1,10 @@
 <template lang="pug">
   .page
-    .logo Die
-      br
-      | Swing Schlampen
+    .content
+      .logo Die
+        br
+        | Swing Schlampen
+    Footer
 </template>
 
 <script>
@@ -24,5 +26,10 @@ export default {
   font-size: 70px
   color: #8b0000
   text-shadow: 1px 1px 2px #000
-  margin-top: 45vh
+  margin-top: 35vh
+
+@media (max-width: 900px)
+  .logo
+    font-size: 50px
+
 </style>

@@ -1,7 +1,8 @@
 <template lang="pug">
-  .page
+.page
+  .content
     v-container
-      h1 So kannst Du uns erreichen
+      h2 So kannst Du uns erreichen
       v-layout(row-sm, column, child-flex-sm)
         v-card-text.ma-1
           h3 Kontakt
@@ -27,6 +28,8 @@
             Verlag und Medien
             Ernst-König-Straße 1-2
             06108 Halle (Saale)
+
+  Footer
 
 </template>
 

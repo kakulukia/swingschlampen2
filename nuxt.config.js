@@ -7,12 +7,14 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'SwingSchlampen reloaded' }
+      { hid: 'description', name: 'description', content: 'SwingSchlampen reloaded' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'mobile-web-app-capable', content: 'yes' }
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Saira:300,400,500,700|Material+Icons' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'font-awesome.css' }
+      { rel: 'stylesheet', type: 'text/css', href: '/font-awesome.css' }
     ]
   },
   /*
@@ -44,10 +46,11 @@ module.exports = {
   */
   plugins: [
     '~/plugins/vuetify',
-    {src: '~/plugins/v-img', ssr: false}
+    { src: '~/plugins/v-img', ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ],
   env: {
-    baseUrl: 'http://localhost:8000'
+    baseUrl: 'http://admin.swingschlampen.de/'
   },
   /*
   ** Load Vuetify CSS globally

@@ -1,7 +1,9 @@
 <template lang="pug">
   .page.center
-    v-container
-      img(v-img="group", v-lazy="'/img/fotos/' + image", v-for="(image, index) in images", :key='index')
+    .content
+      v-container
+        img(v-img="group", v-lazy="'/img/fotos/' + image", v-for="(image, index) in images", :key='index')
+    Footer
 </template>
 
 <script>

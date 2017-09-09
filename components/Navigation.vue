@@ -47,29 +47,33 @@ export default {
 <style lang="sass">
 .burger
   text-align: right
+  padding: 0 20px
   i
     font-size: 25px
     display: none
 
 
-@media (max-width: 1000px)
+@media (max-width: 900px)
   .burger
     color: white
-    padding: 10px 20px
+    padding: 20px
     i
       cursor: pointer
       display: inline-block
 
   .nav
     position: absolute
-    width: 200px
-    top: -700px
+    width: 150px
+    top: -777px
     right: 20px
     &.open
-      top: 50px
+      top: 55px
+    li
+      font-size: 15px
 
 
 .nav
+  padding: 0
   z-index: 11
   transition: all .5s cubic-bezier(0, 1, 0.5, 1)
   display: inline-block
@@ -85,7 +89,7 @@ export default {
       color: #f5f5f5
       display: block
       text-decoration: none
-      padding: 0 0.5em
+      padding: 0 10px
       background: black
       border-bottom: 4px solid black
       &.nuxt-link-active, &:hover
@@ -93,5 +97,28 @@ export default {
       &:first-letter
         :font-size 50px
         color: darkred
+
+
+@media (max-width: 900px)
+  .burger
+    color: white
+    padding: 20px
+    i
+      cursor: pointer
+      display: inline-block
+
+  .nav
+    position: absolute
+    width: 100px
+    top: -777px
+    right: 20px
+    &.open
+      top: 75px
+    li
+      font-size: 20px
+      a
+        &:first-letter
+          font-size: 25px
+          color: darkred
 
 </style>

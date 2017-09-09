@@ -1,12 +1,13 @@
 <template lang="pug">
-  .page.center
+.page.center
+  .content
     v-container
       h1 Das Date
 
       a(v-tooltip:right="{ html: 'PDF-Booklet herunterladen' }", href="/pdf/das Date-Booklet.pdf", target="_blank")
         img(src="/img/dateCover.png")
 
-      v-layout(row-sm, column, child-flex-sm)
+      v-layout(row-sm, child-flex-sm)
         v-card-text.ma-1
           p Hier kannst Du unser neues Album bestellen!
             br
@@ -16,8 +17,7 @@
             input(type="hidden", name="hosted_button_id", value="XVFZBXLXS5VLE")
             input(type="image", src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_buynow_LG.gif", border="0", name="submit", alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.")
             img(alt="", border="0", src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif", width="1", height="1")
-
-
+  Footer
 </template>
 
 <script>

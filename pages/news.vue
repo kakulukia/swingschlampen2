@@ -1,11 +1,13 @@
 <template lang="pug">
   .page.center
-    v-container
-      h2 Neues von den SwingSchlampen
-      v-layout(column)
-        v-card-text.ma-2.news(v-for='article, index in news', key="index")
-          h2 {{ article.title }}
-          .content(v-html='article.text')
+    .content
+      v-container
+        h2 Neues von den SwingSchlampen
+        v-layout(column)
+          v-card-text.ma-2.news(v-for='article, index in news', key="index")
+            h2 {{ article.title }}
+            .content(v-html='article.text')
+    Footer
 </template>
 
 <script>
@@ -25,6 +27,8 @@ export default {
         item.text = item.text.replace(
           new RegExp('src="/media', 'g'),
           'src="' + process.env.baseUrl + '/media')
+        item.text = item.text.replace(
+          new RegExp('width: [0-9]+px', 'g'), '')
       })
       app.news = news
     })
@@ -37,22 +41,15 @@ export default {
   background-image: url("/img/bg/Geheimnis.jpg")
 
   .news
+    font-size: 16px
     text-align: left
     h2
       font-family: "SF-Hollywood-Hills", serif
       text-shadow: 2px 2px 2px #333
     img
       display: block
-      margin: 1em auto
+      margin: 3em auto
+      width: 70%
       clear: both
 
-      &:first-of-type
-        margin-top: 0
-
-      &.fr-fil
-        float: left
-        margin-right: 1em
-      &.fr-fir
-        float: right
-        margin-left: 1em
 </style>

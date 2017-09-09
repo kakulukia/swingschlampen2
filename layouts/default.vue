@@ -51,27 +51,35 @@ html, body, #__nuxt, #app
   display: flex
   flex-direction: column
 
+.content
+  flex-grow: 1
+
 .page
   flex-grow: 1
+  overflow: scroll
+  display: flex
+  flex-direction: column
+  -webkit-overflow-scrolling: touch
   font-family: 'Saira', serif
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
   background-attachment: fixed
   padding-top: 3em
-  overflow: scroll
   &.center
     text-align: center
 
   h1
     margin-bottom: 0.5em
     color: darkred
-    text-shadow: 5px 5px 5px #333
+    text-shadow: 2px 2px 3px #333
 
   img, iframe
     border: 17px solid black
     outline: 2px solid white
     margin: 10px
+    max-width: 100%
+    box-sizing: border-box
 
   .card__text
     background: rgba(255, 255, 255, 0.7)
@@ -84,9 +92,10 @@ html, body, #__nuxt, #app
   h2
     font-size: 35px
     color: darkred
-    text-shadow: 5px 5px 5px #333
+    text-shadow: 2px 2px 3px #333
 
   figure
+    max-width: 100%
     position: relative
     figcaption
       position: absolute

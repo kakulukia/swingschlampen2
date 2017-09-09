@@ -1,5 +1,6 @@
 <template lang="pug">
-  .page.center
+.page.center
+  .content
     v-container
       h2 Hier kannst Du uns als naechstes sehen
 
@@ -8,6 +9,7 @@
           dt {{ date.start | moment("dd, Do MMMM YYYY") }}
           dd {{ date.name }}
           br
+  Footer
 </template>
 
 <script>
