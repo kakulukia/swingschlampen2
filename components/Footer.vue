@@ -12,6 +12,7 @@
 <style lang="sass" scoped>
 .page
   .footer, footer
+    padding-right: 20px
     color: white
     background: none
     justify-content: flex-end

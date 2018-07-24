@@ -56,7 +56,7 @@ html, body, #__nuxt, #app
 
 .page
   flex-grow: 1
-  overflow: scroll
+  overflow: overlay
   display: flex
   flex-direction: column
   -webkit-overflow-scrolling: touch

@@ -2,7 +2,6 @@
   .page.center
     .content
       v-container
-        h2 Neues von den SwingSchlampen
         v-layout(column)
           v-card-text.ma-2.news(v-for='article, index in news', key="index")
             h2 {{ article.title }}
