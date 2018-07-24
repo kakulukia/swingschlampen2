@@ -19,4 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+    npm run generate; rsync -r -P -e ssh --stats dist/* pepperz.de:www/swingschlampen.de
