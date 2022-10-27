@@ -7,7 +7,7 @@
       Am Heideberg 50
       15738 Zeuthen
 
-      Telefon: 0176 87576699
+      Telefon: 033762 219882
       E-Mail: info@swingschlampen.de
 
     h3 Vertreten durch:

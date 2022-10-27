@@ -50,7 +50,7 @@ module.exports = {
     { src: '~plugins/ga.js', ssr: false }
   ],
   env: {
-    baseUrl: 'http://admin.swingschlampen.de/'
+    baseUrl: 'https://admin.swingschlampen.de/'
   },
   /*
   ** Load Vuetify CSS globally

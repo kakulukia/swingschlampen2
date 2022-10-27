@@ -19,7 +19,7 @@
             | E-Mail:&nbsp;
             a(href="mailto: info@swingschlampen.de") info@swingschlampen.de
             br
-            |  Tel. 0176 8757 6699
+            |  Tel. 033762 219882
         v-card-text.ma-1
           h3 Label
           p(style='white-space:pre;').
