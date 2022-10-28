@@ -37,6 +37,12 @@ export default {
   font-weight: normal
   font-style: normal
 
+@font-face
+  font-family: 'Saira'
+  src: url('/fonts/saira.ttf')
+  font-weight: normal
+  font-style: normal
+
 
 .header
   background: black
@@ -45,7 +51,7 @@ html, body, #__nuxt, #app
   padding: 0
   margin: 0
   height: 100%
-  font-family: 'Saira', serif
+  font-family: 'Saira', sans-serif
 
 #app
   display: flex

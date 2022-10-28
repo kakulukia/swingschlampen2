@@ -12,7 +12,6 @@ module.exports = {
       { name: 'mobile-web-app-capable', content: 'yes' }
     ],
     link: [
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Saira:300,400,500,700|Material+Icons' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: '/font-awesome.css' }
     ]
